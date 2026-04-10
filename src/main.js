@@ -43,7 +43,9 @@ function startOne() {
     }
 
     client.once('login', async () => {
-        let content = `/register ${randomName()} ${randomName()}`;
+        const password = randomName();
+
+        let content = `/register ${password} ${password}`;
         client.chat(content);
 
         content = `${BASE_NAME} is testing the server`;
