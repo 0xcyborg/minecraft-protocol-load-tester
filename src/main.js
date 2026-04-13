@@ -43,7 +43,7 @@ function startOne() {
     }
 
     client.once('login', async () => {
-        const password = randomName();
+        const password = "pass_" + randomName();
 
         let content = `/register ${password} ${password}`;
         client.chat(content);
