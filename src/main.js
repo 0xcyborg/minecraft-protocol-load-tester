@@ -9,7 +9,7 @@ const ITERATIONS = 100;
 const CONCURRENCY = 10;
 
 const MESSAGES_PER_BOT = 10;
-const MESSAGE_INTERVAL_MS = 25;
+const MESSAGE_INTERVAL_MS = 30;
 
 let active = 0;
 let launched = 0;
@@ -59,7 +59,6 @@ function startOne() {
         client.end();
     });
 
-    
     client.once('end', done);
     client.once('error', done);
 }
